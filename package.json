@@ -1,0 +1,14 @@
+{
+  "name": "biconomy_assignment",
+  "version": "1.0.0",
+  "author": "Devesh Rawat",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "ethers": "^5.3.1",
+    "node-cron": "^3.0.0",
+    "winston": "^3.3.3"
+  }
+}
