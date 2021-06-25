@@ -5,15 +5,18 @@ import config from "./src/config.js";
 
 const addresses = new UpdateAddresses();
 
-async function startTimer() {
-    logger.info(`setting up a ${config.TIME_INTERVEL} second timer...`);
-    const timer = new Timer(config.TIME_INTERVEL);
-    timer.startTimer();
-    await addresses.getAddresses();
+class Main {
+    startTimer = async function () {
+        logger.info(`setting up a ${config.TIME_INTERVEL} second timer...`);
+        const timer = new Timer(config.TIME_INTERVEL);
+        timer.startTimer();
+        await addresses.getAddresses();
+    };
 }
 
 //Methods
 // addresses.removeAddress()
 // addresses.setAddresses()
 
-startTimer();
+const server = new Main();
+server.startTimer();

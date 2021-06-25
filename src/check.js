@@ -15,7 +15,7 @@ class Check {
     _checkThreshold = async function (address) {
         let currentBalance = await this._fetchBalance(address);
         if (currentBalance < 0.5) {
-            logger.error("balance is less then 0.5.", { address });
+            logger.info("balance is less then 0.5.", { address });
         }
     };
 
