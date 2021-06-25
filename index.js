@@ -15,8 +15,8 @@ class Main {
 }
 
 //Methods
-// addresses.removeAddress()
-// addresses.setAddresses()
+// addresses.removeAddress() //pass the addresss to remove
+// addresses.setAddresses() //pass address in string string formate
 
 const server = new Main();
 server.startTimer();
